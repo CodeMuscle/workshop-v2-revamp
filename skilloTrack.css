@@ -567,6 +567,10 @@
   transform: translateY(-15%);
 }
 
+#fb-scale {
+  transform: translateY(-15%) scale(1.2);
+}
+
 @media screen and (max-width: 575px) {
   .skillo-card-experts {
     padding: 9px 10px 14px 15px;
