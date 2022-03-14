@@ -28,12 +28,12 @@ function myFunction2(flag) {
                 <p class="grid-content">Average CTC</p>
               </div>
               <div class="grid-cell" id="cell-3">
-                <h4 class="grid-head">40+</h4>
+                <h4 class="grid-head">140+</h4>
                 <p class="grid-content">Hiring Companies</p>
               </div>
               <div class="grid-cell" id="cell-4">
                 <h4 class="grid-head">5 months</h4>
-                <p class="grid-content">Average Salary Hike</p>
+                <p class="grid-content">On the Job Training</p>
               </div>
             </div>`;
     newContent2.innerHTML = ``;
@@ -48,7 +48,7 @@ function myFunction2(flag) {
                 <p class="grid-content">Average CTC</p>
               </div>
               <div class="grid-cell" id="cell-3">
-                <h4 class="grid-head">40+</h4>
+                <h4 class="grid-head">140+</h4>
                 <p class="grid-content">Hiring Companies</p>
               </div>
               <div class="grid-cell" id="cell-4">

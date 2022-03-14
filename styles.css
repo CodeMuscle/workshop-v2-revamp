@@ -97,6 +97,7 @@ section {
 }
 
 .nav-track-mobile {
+  cursor: pointer;
   display: grid;
   grid-template-columns: 1fr 10fr;
   grid-column-gap: 15px;
@@ -251,6 +252,7 @@ section {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(49, 49, 49, 0.178);
+  cursor: pointer;
 }
 
 .nav-track-svg-laptop {

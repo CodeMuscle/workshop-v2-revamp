@@ -39,7 +39,7 @@ function myFunction(x) {
       <h4 class="nav-list-head-mobile">Externship Tracks</h4>
       <ul class="nav-tracks-list-mobile">
         
-        <li class="nav-track-mobile">
+        <li class="nav-track-mobile" onclick="redirectData()">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -66,7 +66,7 @@ function myFunction(x) {
               ></path>
             </g>
           </svg>
-          <div class="nav-track-content-mobile">
+          <div class="nav-track-content-mobile" >
             <a
               href="./data.html" 
               style="display: block; color: #495057; text-decoration: none"
@@ -174,7 +174,7 @@ function myFunction(x) {
             </div>
           </div>
         </li>
-        <li class="nav-track-mobile">
+        <li class="nav-track-mobile" onclick="redirectMarket()">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -199,7 +199,7 @@ function myFunction(x) {
               ></path>
             </g>
           </svg>
-          <div class="nav-track-content-mobile">
+          <div class="nav-track-content-mobile" >
             <a
               href="./marketing.html" 
               style="display: block; color: #495057; text-decoration: none"
@@ -406,7 +406,7 @@ function myFunction(x) {
     <h3 class="nav-list-head-laptop">Externship Tracks</h3>
     <ul class="nav-tracks-list-laptop">
       
-      <li class="nav-track-laptop">
+      <li class="nav-track-laptop" onclick="redirectData()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -433,7 +433,7 @@ function myFunction(x) {
             ></path>
           </g>
         </svg>
-        <div class="nav-track-content-laptop">
+        <div class="nav-track-content-laptop" >
           <a 
             href="./data.html" 
             style="display: block; color: #495057; text-decoration: none"
@@ -545,7 +545,7 @@ function myFunction(x) {
           </div>
         </div>
       </li>
-      <li class="nav-track-laptop">
+      <li class="nav-track-laptop" onclick="redirectMarket()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -570,7 +570,7 @@ function myFunction(x) {
             ></path>
           </g>
         </svg>
-        <div class="nav-track-content-laptop">
+        <div class="nav-track-content-laptop" >
           <a
             href="./marketing.html" 
             style="display: block; color: #495057; text-decoration: none"
