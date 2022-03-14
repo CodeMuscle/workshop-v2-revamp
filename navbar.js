@@ -311,7 +311,7 @@ function myFunction(x) {
     </div>
   </div>
   <div class="nav-log-mobile">
-    <a href="#" class="nav-log-mobile-btn">Log In / Sign Up</a>
+    <a href="https://www.bigmarker.com/trainity/Trainity-Launch-Introductory-Webinar-1e4a5df3013b24237995678d" class="nav-log-mobile-btn">Log In / Sign Up</a>
   </div>
 </div>
 `;
@@ -395,7 +395,7 @@ function myFunction(x) {
         <a href="#" class="nav-track-laptop-btn">Tracks</a>
       </div>
       <div class="nav-log-link-laptop">
-        <a href="#" class="nav-log-laptop-btn">Log In / Sign Up</a>
+        <a href="https://www.bigmarker.com/trainity/Trainity-Launch-Introductory-Webinar-1e4a5df3013b24237995678d" class="nav-log-laptop-btn">Log In / Sign Up</a>
       </div>
     </div>
   </div>
