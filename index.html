@@ -47,6 +47,8 @@
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
 
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -2314,4 +2316,18 @@
   <script src="./navbar.js"></script>
   <script src="./moment.min.js"></script>
   <script src="./date.js"></script>
+  <script type="text/javascript">
+    $(document).mouseup(function (e) {
+      if ($(e.target).closest(".nav-tracks-mobile").length === 0) {
+        $(".nav-tracks-mobile").hide();
+      }
+    });
+    // $(document).mouseup(function (e) {
+    //   var container = $(".nav-tracks-laptop");
+    //   console.log(e.target.id);
+    //   if (!container.is(e.target) && container.has(e.target).length === 0) {
+    //     container.hide();
+    //   }
+    // });
+  </script>
 </html>
