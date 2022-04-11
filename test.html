@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trainity</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <!-- <link href="http://fonts.cdnfonts.com/css/manrope" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/section2.css" />
+    <link rel="stylesheet" href="./skilloTrack.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/trainity/favicon-32x32.png"
+      type="image/x-icon"
+    />
+
+    <!-- Hotjar Tracking Code for ./ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2869263, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TV6CZ2709P"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TV6CZ2709P");
+    </script>
+
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-N8X73DL"></script>
+
+    <!-- <script>
+	window.fwSettings={
+	'widget_id':84000001464
+	};
+	!function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() 
+</script>
+<script type='text/javascript' src='https://ind-widget.freshworks.com/widgets/84000001464.js' async defer></script> -->
+    <style>
+      .custom_fc_frame {
+        right: 50px !important;
+        bottom: 20px !important;
+      }
+      @media screen and (max-width: 786px) {
+        .custom_fc_frame {
+          right: 10px !important;
+          bottom: 15% !important;
+          transform: scale(0.9) !important;
+        }
+      }
+    </style>
+    <script>
+      function initFreshChat() {
+        window.fcWidget.init({
+          token: "850ad3ee-919d-428a-b2ac-9c5b3b9d96e0",
+          host: "https://wchat.in.freshchat.com",
+          config: {
+            cssNames: {
+              widget: "custom_fc_frame",
+            },
+          },
+        });
+      }
+      function initialize(i, t) {
+        var e;
+        i.getElementById(t)
+          ? initFreshChat()
+          : (((e = i.createElement("script")).id = t),
+            (e.async = !0),
+            (e.src = "https://wchat.in.freshchat.com/js/widget.js"),
+            (e.onload = initFreshChat),
+            i.head.appendChild(e));
+      }
+      function initiateCall() {
+        initialize(document, "Freshdesk Messaging-js-sdk");
+      }
+      window.addEventListener
+        ? window.addEventListener("load", initiateCall, !1)
+        : window.attachEvent("load", initiateCall, !1);
+    </script>
+
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-N8X73DL"></script>
+  </head>
+  <body style="height: 800vh">
+    <div class="my-nav-bar"></div>
+
+    <!-- <section class="new-nav">
+
+    </section> -->
+
+    <!-- Swiper JS -->
+
+    <div class="sticky-bar">
+      <div class="sticky-content">
+        <div class="sticky-heading">
+          <h5>
+            Registration Deadline:
+            <span class="set-date">
+              <span class="_date"></span>
+              <span class="_month"></span>, </span
+            ><span class="_year"></span>
+          </h5>
+        </div>
+        <a
+          href="https://event.webinarjam.com/register/28/8q8lvbnp"
+          class="pricing-btn"
+          >Register for Free
+          <!-- <img
+            src="https://www.mycaptain.in/assets/img/white-arrow-right.7d0fd34a.svg"
+            alt=""
+            class="arrow"
+        /> -->
+        </a>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+  <script src="./navbar.js"></script>
+  <script src="./moment.min.js"></script>
+  <script src="./date.js"></script>
+  <script type="text/javascript">
+    // $(document).mouseup(function (e) {
+    //   if ($(e.target).closest(".nav-tracks-mobile").length === 0) {
+    //     $(".nav-tracks-mobile").hide();
+    //   }
+    // });
+
+    document.addEventListener("mouseup", function (e) {
+      var container = document.getElementByClass('nav-tracks-mobile"');
+      if (!container.contains(e.target)) {
+        container.style.display = "none";
+      }
+    });
+    // $(document).mouseup(function (e) {
+    //   var container = $(".nav-tracks-laptop");
+    //   console.log(e.target.id);
+    //   if (!container.is(e.target) && container.has(e.target).length === 0) {
+    //     container.hide();
+    //   }
+    // });
+  </script>
+</html>
