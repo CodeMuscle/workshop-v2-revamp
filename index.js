@@ -32,7 +32,7 @@ function myFunction2(flag) {
                 <p class="grid-content">Hiring Companies</p>
               </div>
               <div class="grid-cell" id="cell-4">
-                <h4 class="grid-head">5 months</h4>
+                <h4 class="grid-head">12 weeks</h4>
                 <p class="grid-content">On the Job Training</p>
               </div>
             </div>`;
