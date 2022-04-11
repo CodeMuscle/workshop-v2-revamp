@@ -100,3 +100,18 @@ lorList.addEventListener("click", (e) => {
 // };
 
 // window.addEventListener("scroll", scrollEventHandler, false);
+
+const skillContent = document.querySelector(".skills-content");
+
+function myFunction(x) {
+  if (x.matches) {
+    // If media query matches
+    skillContent.style.display = "none";
+  } else {
+    skillContent.style.display = "block";
+  }
+}
+
+var x = window.matchMedia("(max-width: 700px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
