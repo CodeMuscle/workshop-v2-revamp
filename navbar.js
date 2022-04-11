@@ -41,7 +41,7 @@ function myFunction(x) {
             >Tracks</a
           >
           <div class="nav-tracks-mobile" id="tracks-div-mobile">
-            <h4 class="nav-list-head-mobile">Externship Tracks</h4>
+            <h4 class="nav-list-head-mobile">Tracks</h4>
             <ul class="nav-tracks-list-mobile">
               <li class="nav-track-mobile" onclick="redirectData()">
                 <svg
@@ -439,7 +439,7 @@ function myFunction(x) {
               >
               <div class="nav-laptop-tracks" id="tracks-div-laptop">
                 <div class="nav-tracks-laptop">
-                  <h3 class="nav-list-head-laptop">Externship Tracks</h3>
+                  <h3 class="nav-list-head-laptop">Tracks</h3>
                   <ul class="nav-tracks-list-laptop">
                     <li class="nav-track-laptop" onclick="redirectData()">
                       <svg
