@@ -17,6 +17,19 @@
       rel="stylesheet"
     />
 
+    <link
+      href="assets/css/theme-course.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="assets/css/loaders/loader-typing.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+
     <link rel="stylesheet" href="./styles.css" />
     <link
       rel="stylesheet"
@@ -89,16 +102,112 @@
 </script>
 <script type='text/javascript' src='https://ind-widget.freshworks.com/widgets/84000001464.js' async defer></script> -->
     <style>
+      .cstm-star-size {
+        width: 25px !important;
+        transform: translateY(-20%) !important;
+      }
+
+      @media screen and (min-width: 992px) {
+        .cstm-width {
+          flex: 0 0 35% !important;
+          max-width: 35% !important;
+        }
+      }
+
       .custom_fc_frame {
         right: 50px !important;
         bottom: 20px !important;
       }
       @media screen and (max-width: 786px) {
+        .cstm-star-size {
+          width: 25px !important;
+          transform: translateY(-90%) !important;
+        }
         .custom_fc_frame {
           right: 10px !important;
           bottom: 15% !important;
           transform: scale(0.9) !important;
         }
+      }
+    </style>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      @media screen and (max-width: 577px) {
+        .margin-change {
+          display: block;
+          margin-bottom: 50px;
+        }
+        .register {
+          display: block;
+          z-index: 1000;
+          width: 100vw;
+          height: 60px;
+          padding: 10px;
+          padding-top: 15px;
+          background: #0d2129;
+          position: fixed;
+          bottom: -1px;
+          left: 0;
+          text-align: center;
+          /* border-radius: 5px; */
+          margin-bottom: 0;
+          font-size: 1.3rem;
+          /* display: grid;
+          grid-template-rows: 1fr;
+          grid-template-columns: 1fr 2fr;
+          justify-content: start; */
+        }
+
+        .custom-btn {
+          padding: ;
+        }
+
+        /* .whats-app {
+          display: none;
+        } */
+
+        .foot {
+          height: 104vh;
+        }
+      }
+      @media screen and (max-width: 770px) {
+        .stars {
+          display: block;
+          transform: translate(55%, 120%);
+        }
+      }
+      /* .w-cover {
+        height: 63px;
+        width: 63px;
+        position: fixed;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        right: 0;
+        bottom: 0;
+        z-index: 110;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        text-align: center;
+      } */
+      .whats-app {
+        /* transform: scale(0.05); */
+        height: 40px;
+        position: fixed;
+        margin-right: 25px;
+        margin-bottom: 12px;
+        right: 0;
+        bottom: 0;
+        z-index: 2000;
+        object-fit: cover;
+        /* bottom: 10; */
+      }
+      .whats-app img {
+        display: block;
       }
     </style>
     <script>
@@ -133,7 +242,7 @@
 
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-N8X73DL"></script>
   </head>
-  <body style="height: 800vh">
+  <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -182,6 +291,187 @@
       </div>
     </div>
 
+    <section style="margin-top: 4rem">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-6">
+          <div class="col-xl-8 col-lg-9 col-md-10">
+            <h1 class="display-4">Internship Training Program</h1>
+            <p class="lead">
+              Get trained, work on live projects and get certified in 8 weeks.
+            </p>
+
+            <div
+              class="d-flex flex-column flex-sm-row justify-content-center align-items-center align-items-sm-start mt-5"
+            >
+              <div class="d-flex flex-column mx-1 text-center">
+                <a
+                  href="https://event.webinarjam.com/register/56/wg93ys4g"
+                  class="btn btn-lg btn-primary mb-2"
+                >
+                  <img
+                    class="icon"
+                    src="assets/img/icons/social/github.svg"
+                    alt="github social icon"
+                    data-inject-svg
+                  />
+                  <span>Register for Free</span>
+                  <!-- <span>Enroll Now</span> -->
+                </a>
+                <a
+                  href="https://event.webinarjam.com/register/56/wg93ys4g"
+                  class="text-small hover-arrow"
+                  >Application Deadline: 11:00 AM,
+                  <span class="set-date">
+                    <span class="_date"></span>
+                    <span class="_month"></span> </span
+                  >,<span class="_year"></span
+                ></a>
+              </div>
+              <a
+                href="#apply-now"
+                class="mx-1 btn btn-lg btn-primary-3 mt-3 mt-sm-0 margin-change"
+                >Explore Tracks</a
+              >
+            </div>
+            <!-- <p class="lead" style="margin-bottom: 30px">
+              <strong
+                >ENROLLMENT DEADLINE HAS BEEN EXTENDED TO 11:00 AM, 28<sup
+                  >th</sup
+                >
+                JUNE</strong
+              >
+            </p> -->
+          </div>
+        </div>
+        <div class="row justify-content-center" id="type-script">
+          <div class="col-xl-8 col-lg-9">
+            <div
+              class="rounded bg-primary-3 p-4 text-light text-monospace shadow layer-2"
+            >
+              <div>
+                <span class="text-primary-2">$</span>
+                <span
+                  data-typed-text
+                  data-type-speed="80"
+                  data-strings='["Stand out with an internship experience and certification in your resume"]'
+                  data-loop="true"
+                  data-back-delay="2000"
+                ></span>
+              </div>
+            </div>
+            <div class="decoration bottom right" data-aos="fade-up">
+              <img
+                class="bg-primary-2"
+                src="assets/img/decorations/deco-blob-2.svg"
+                alt="deco-blob-2 decoration"
+                data-inject-svg
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-11">
+            <div class="row">
+              <div
+                class="col-md-6 d-flex mb-4"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="icon-round bg-primary mr-3">
+                  <img
+                    class="icon bg-primary"
+                    src="assets/img/icons/theme/media/next.svg"
+                    alt="icon"
+                    data-inject-svg
+                  />
+                </div>
+                <div>
+                  <h4 class="mb-2">Upskilling</h4>
+                  <p class="lead pr-xl-4">
+                    8 Weeks of intensive training & certifications through
+                    structured, industry vetted curriculum.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-md-6 d-flex mb-4"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="icon-round bg-primary mr-3">
+                  <img
+                    class="icon bg-primary"
+                    src="assets/img/icons/theme/code/code.svg"
+                    alt="icon"
+                    data-inject-svg
+                  />
+                </div>
+                <div>
+                  <h4 class="mb-2">Live Projects</h4>
+                  <p class="lead pr-xl-4">
+                    Build real, ready-to-ship products with team members,
+                    professionals & students from other tracks.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-md-6 d-flex mb-4"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="icon-round bg-primary mr-3">
+                  <img
+                    class="icon bg-primary"
+                    src="assets/img/icons/theme/shopping/box-2.svg"
+                    alt="icon"
+                    data-inject-svg
+                  />
+                </div>
+                <div>
+                  <h4 class="mb-2">Workplace Skills</h4>
+                  <p class="lead pr-xl-4">
+                    Build your resume,enhance your profile & get noticed by
+                    recruiters from top companies.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-md-6 d-flex mb-4"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div class="icon-round bg-primary mr-3">
+                  <img
+                    class="icon bg-primary"
+                    src="assets/img/icons/theme/weather/cloudy-night.svg"
+                    alt="icon"
+                    data-inject-svg
+                  />
+                </div>
+                <div>
+                  <h4 class="mb-2">Industry Certification</h4>
+                  <p class="lead pr-xl-4">
+                    Get Internship & training certificates and gain a point of
+                    differentiation on your CV for your college placements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col text-center">
+            <a href="#" class="lead hover-arrow">Explore all features</a>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
     <!--Testimonial Heading  -->
     <h1 class="test-head">
       Placed Students <br />
@@ -199,7 +489,7 @@
             transform: translate3d(-500.67px, 0px, 0px);
           "
         >
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/nikhilmandekar/"
@@ -222,7 +512,7 @@
               <img src="./logos/Ugam_Logo.svg" alt="" class="company" />
             </div>
           </div>
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/parth-patel-51096/"
@@ -241,7 +531,7 @@
               <img src="./logos/NielsenIQ_logo.svg" alt="" class="company" />
             </div>
           </div>
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a href="#" class="profile" target="blank"
                 ><img
@@ -261,7 +551,7 @@
               <img src="./logos/Pwc_Logo.svg" alt="" class="company" />
             </div>
           </div>
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/manojkumar3142/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACkHX-cBiJ7MvbNdJx6BSF5x1egxJp1UGjs"
@@ -285,7 +575,7 @@
               />
             </div>
           </div>
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/sanskar-hasija/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABzqkW4BLCJldyJ-i8Gv8iEPmVhYGhGGPXk"
@@ -313,7 +603,7 @@
               />
             </div>
           </div>
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/sakshi-gupta-2000/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADPZHU0BAf2MZ475MgGIWZDozYrofcykXYg"
@@ -336,7 +626,7 @@
               <img src="./logos/Emiko_logo.svg" alt="" class="company" />
             </div>
           </div>
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/suraj-kapri-1a60ba188/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACwnP44BkXMBGSdiWhWuWg7O5QcjKHnVLXw"
@@ -359,7 +649,7 @@
               <img src="./logos/eClerx_Logo.svg" alt="" class="company" />
             </div>
           </div>
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/sherylphilip1811/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAC-qFQYBKfRH4e0ZQYg4xNyy877rb5WQtjY"
@@ -382,7 +672,7 @@
               <img src="./logos/Mintifi_logo.svg" alt="" class="company" />
             </div>
           </div>
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/abhishek-sharma-285a48205/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADRNQ4UBwQh6syMafre-Er11hGikbz71YrI"
@@ -407,7 +697,7 @@
             </div>
           </div>
 
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/shruti-nischal-072508143/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACLH4lYB_djaZS8-TzLt9BJb1UyfEePuy0Q"
@@ -436,7 +726,7 @@
             </div>
           </div>
 
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/sumit-401/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABYkq6kB5pdWnCq6cK4wn8xlk8ALOr8RjT0"
@@ -455,7 +745,7 @@
               <img src="./logos/Ugam_Logo.svg" alt="" class="company" />
             </div>
           </div>
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/parth-sethi-72450a194/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAC2jQ4wBP9506qpFWvGAzbbKHuZj9KsKMno"
@@ -491,7 +781,7 @@
             transform: translate3d(-500.67px, 0px, 0px);
           "
         >
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/saswat-satapathy-2931211b7/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADJipk8Btjy9U_nCJfW-wXuz0rFP8bd_fdU"
@@ -515,7 +805,7 @@
               />
             </div>
           </div>
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/varidhijain3/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADZDeX4BVzc7kz4nRBgxQYajig6hQ67Apaw"
@@ -538,7 +828,7 @@
               />
             </div>
           </div>
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/bhargavi-dhade/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACjpyXUBkl-XE4Cto77Kjt_ymiYIQxUYRrU"
@@ -562,7 +852,7 @@
               />
             </div>
           </div>
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/pranay-kesarkar-99b73915b/"
@@ -590,7 +880,7 @@
               />
             </div>
           </div>
-          <!-- <div class="swiper-slide card">
+          <!-- <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/sanskar-hasija/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABzqkW4BLCJldyJ-i8Gv8iEPmVhYGhGGPXk"
@@ -616,7 +906,7 @@
               />
             </div>
           </div>
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/sakshi-gupta-2000/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADPZHU0BAf2MZ475MgGIWZDozYrofcykXYg"
@@ -642,7 +932,7 @@
               />
             </div>
           </div>
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/bhargavi-dhade/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACjpyXUBkl-XE4Cto77Kjt_ymiYIQxUYRrU"
@@ -668,7 +958,7 @@
               />
             </div>
           </div> -->
-          <!-- <div class="swiper-slide card">
+          <!-- <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/naman-gala-85b690124/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAB62ZccBEoj_RNS2XrR0cG-diQiSzMsoWu8"
@@ -694,7 +984,7 @@
               />
             </div>
           </div> -->
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/sumit-guha-203427197/"
@@ -719,7 +1009,7 @@
             </div>
           </div>
 
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/yashwant-kumar-7787a3164/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACdFlowB0bL2nU-4zAMNFOGnw04fbmkviCs"
@@ -744,7 +1034,7 @@
             </div>
           </div>
 
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/chethan-rao-s/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADNoQxkBPLuBw6yECZurkmI5JoDL4NNREFs%22"
@@ -768,7 +1058,7 @@
               />
             </div>
           </div>
-          <div class="swiper-slide card">
+          <div class="swiper-slide swiper-card">
             <div class="card-content">
               <a
                 href="https://www.linkedin.com/in/dharma-teja-alla-06232b171/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACjOIIoBxmZ8jQ_TXXsLSaFGENbWU45KHIA"
@@ -803,7 +1093,7 @@
 
     <!-- How it works section -->
     <section class="works">
-      <div class="works-main">
+      <div class="works-main" style="padding-top: 0 !important">
         <div class="works-content">
           <div class="work-heading">
             <h1 class="work-head">How it Works?</h1>
@@ -867,7 +1157,7 @@
     </section>
 
     <!-- Skills section -->
-    <section class="skills-section">
+    <section class="skills-section" style="padding-top: 30px !important">
       <div class="skills-head">
         <h1 class="skills-heading">6 unique features about Trainity</h1>
         <p class="skills-content">
@@ -1577,6 +1867,77 @@
 
     <!-- Experience Section -->
 
+    <section class="pt-0" style="margin-top: 20px">
+      <div class="container">
+        <div class="row justify-content-center mt-6">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <div data-flickity='{ "imagesLoaded": true, "wrapAround": true }'>
+              <div class="carousel-cell mx-md-4">
+                <div class="card swiper-card-body flex-row py-4">
+                  <img
+                    src="assets/img/avatars/27.jpg"
+                    alt="Avatar"
+                    class="avatar avatar-lg"
+                  />
+                  <div class="ml-3">
+                    <h4>
+                      &ldquo;This program has provided me with Industrial
+                      Experience. It expects me to work daily and at a good
+                      speed which has enhanced my learning capability.&rdquo;
+                    </h4>
+                    <div class="avatar-author d-block">
+                      <h6>Kunal Patel</h6>
+                      <span>Student - Data Analytics</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell mx-md-4">
+                <div class="card swiper-card-body flex-row py-4">
+                  <img
+                    src="assets/img/avatars/100.jpg"
+                    alt="Avatar"
+                    class="avatar avatar-lg"
+                  />
+                  <div class="ml-3">
+                    <h4>
+                      &ldquo;It has helped to speed up myself and helped me in
+                      Personality development.&rdquo;
+                    </h4>
+                    <div class="avatar-author d-block">
+                      <h6>Sumukh Hegde</h6>
+                      <span>Student - Software Development</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell mx-md-4">
+                <div class="card swiper-card-body flex-row py-4">
+                  <img
+                    src="assets/img/avatars/122.jpg"
+                    alt="Avatar"
+                    class="avatar avatar-lg"
+                  />
+                  <div class="ml-3">
+                    <h4>
+                      &ldquo;The program has helped me remain motivated and
+                      positive in these pandemic times. Listening to the
+                      podcasts every morning and writing journals before bed has
+                      made me more focused towards my goal. &rdquo;
+                    </h4>
+                    <div class="avatar-author d-block">
+                      <h6>Saswat Satapathy</h6>
+                      <span>Student - Data Analytics</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Testimonials -->
     <section class="testimonial-section">
       <div class="testimonial-container">
@@ -2285,6 +2646,82 @@
       </div>
     </div>
   </body>
+
+  <!-- Required vendor scripts (Do not remove) -->
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+  <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+  <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+  <script type="text/javascript" src="assets/js/aos.js"></script>
+  <!-- Clipboard (copies content from browser into OS clipboard) -->
+  <script type="text/javascript" src="assets/js/clipboard.min.js"></script>
+  <!-- Fancybox (handles image and video lightbox and galleries) -->
+  <script
+    type="text/javascript"
+    src="assets/js/jquery.fancybox.min.js"
+  ></script>
+  <!-- Flatpickr (calendar/date/time picker UI) -->
+  <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+  <!-- Flickity (handles touch enabled carousels and sliders) -->
+  <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+  <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+  <script
+    type="text/javascript"
+    src="assets/js/ion.rangeSlider.min.js"
+  ></script>
+  <!-- Isotope (masonry layouts and filtering) -->
+  <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+  <!-- jarallax (parallax effect and video backgrounds) -->
+  <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+  <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+  <script
+    type="text/javascript"
+    src="assets/js/jarallax-element.min.js"
+  ></script>
+  <!-- jQuery Countdown (displays countdown text to a specified date) -->
+  <script
+    type="text/javascript"
+    src="assets/js/jquery.countdown.min.js"
+  ></script>
+  <!-- jQuery smartWizard facilitates steppable wizard content -->
+  <script
+    type="text/javascript"
+    src="assets/js/jquery.smartWizard.min.js"
+  ></script>
+  <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+  <script
+    type="text/javascript"
+    src="assets/js/plyr.polyfilled.min.js"
+  ></script>
+  <!-- Prism (displays formatted code boxes) -->
+  <script type="text/javascript" src="assets/js/prism.js"></script>
+  <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+  <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+  <!-- Smooth scroll (animation to links in-page)-->
+  <script
+    type="text/javascript"
+    src="assets/js/smooth-scroll.polyfills.min.js"
+  ></script>
+  <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+  <script
+    type="text/javascript"
+    src="assets/js/svg-injector.umd.production.js"
+  ></script>
+  <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+  <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+  <!-- Typed text (animated typing effect)-->
+  <script type="text/javascript" src="assets/js/typed.min.js"></script>
+  <!-- Required theme scripts (Do not remove) -->
+  <script type="text/javascript" src="assets/js/theme.js"></script>
+  <!-- Removes page load animation when window is finished loading -->
+  <script type="text/javascript">
+    window.addEventListener("load", function () {
+      document.querySelector("body").classList.add("loaded");
+    });
+  </script>
   <script src="./index.js"></script>
   <script src="./navbar.js"></script>
   <script src="./moment.min.js"></script>
