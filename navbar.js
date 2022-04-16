@@ -41,7 +41,7 @@ function myFunction(x) {
             >Tracks</a
           >
           <div class="nav-tracks-mobile" id="tracks-div-mobile">
-            <h4 class="nav-list-head-mobile">Tracks</h4>
+            <h3 class="nav-list-head-mobile">Tracks</h3>
             <ul class="nav-tracks-list-mobile">
               <li class="nav-track-mobile" onclick="redirectData()">
                 <svg
@@ -83,9 +83,9 @@ function myFunction(x) {
                       color: #495057;
                       text-decoration: none;
                     "
-                    ><h4 class="nav-content-head-mobile">Data Analytics</h4></a
+                    ><h5 class="nav-content-head-mobile" style="font-size: 1rem !important;">Data Analytics</h5></a
                   >
-                  <h4 class="nav-content-rating-mobile">4.4 (3200+ ratings)</h4>
+                  <h5 class="nav-content-rating-mobile" style="font-size: 1rem !important;">4.4 (3200+ ratings)</h5>
                   <div class="nav-content-stars-mobile">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -228,11 +228,11 @@ function myFunction(x) {
                       color: #495057;
                       text-decoration: none;
                     "
-                    ><h4 class="nav-content-head-mobile">
+                    ><h5 class="nav-content-head-mobile" style="font-size: 1rem !important;">
                       Digital Marketing
-                    </h4></a
+                    </h5></a
                   >
-                  <h4 class="nav-content-rating-mobile">4.7 (120+ ratings)</h4>
+                  <h5 class="nav-content-rating-mobile" style="font-size: 1rem !important;">4.7 (120+ ratings)</h5>
                   <div class="nav-content-stars-mobile">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -378,29 +378,31 @@ function myFunction(x) {
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
       var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-        if (navContentMobile.style.display == "none")
-          navContentMobile.style.display = "block";
+      if (currentScrollPos > 0) {
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+          if (navContentMobile.style.display == "none")
+            navContentMobile.style.display = "block";
 
-        // document.getElementsByClassName("sticky-bar").style.bottom = "40px";
-      } else {
-        document.getElementById("navbar").style.top = "-100px";
-        if (navContentMobile.style.display != "none")
-          navContentMobile.style.display = "none";
+          // document.getElementsByClassName("sticky-bar").style.bottom = "40px";
+        } else {
+          document.getElementById("navbar").style.top = "-100px";
+          if (navContentMobile.style.display != "none")
+            navContentMobile.style.display = "none";
 
-        if (navHamSvg.classList.contains("nav-cross-mobile")) {
-          navHamSvg.innerHTML = `<path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" fill="#212529"></path>`;
-          navHamSvg.classList.remove("nav-cross-mobile");
-          navContentMobile.classList.remove("new-nav-content-show");
-          if (tracksBtnMobile.classList.contains("div-on")) {
-            trackContentMobile.style.display = "none";
-            tracksBtnMobile.classList.remove("div-on");
+          if (navHamSvg.classList.contains("nav-cross-mobile")) {
+            navHamSvg.innerHTML = `<path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" fill="#212529"></path>`;
+            navHamSvg.classList.remove("nav-cross-mobile");
+            navContentMobile.classList.remove("new-nav-content-show");
+            if (tracksBtnMobile.classList.contains("div-on")) {
+              trackContentMobile.style.display = "none";
+              tracksBtnMobile.classList.remove("div-on");
+            }
           }
+          // document.getElementsByClassName("sticky-bar").style.bottom = "0";
         }
-        // document.getElementsByClassName("sticky-bar").style.bottom = "0";
+        prevScrollpos = currentScrollPos;
       }
-      prevScrollpos = currentScrollPos;
     };
     window.addEventListener("mouseup", function (event) {
       var tracksDiv = document.getElementById("tracks-div-mobile");
@@ -439,7 +441,7 @@ function myFunction(x) {
               >
               <div class="nav-laptop-tracks" id="tracks-div-laptop">
                 <div class="nav-tracks-laptop">
-                  <h3 class="nav-list-head-laptop">Tracks</h3>
+                  <h5 class="nav-list-head-laptop">Tracks</h5>
                   <ul class="nav-tracks-list-laptop">
                     <li class="nav-track-laptop" onclick="redirectData()">
                       <svg
@@ -798,19 +800,24 @@ function myFunction(x) {
     //   }
     // });
     var prevScrollpos = window.pageYOffset;
+    // console.log("prev", prevScrollpos);
     window.onscroll = function () {
       var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
+      // console.log("curr", currentScrollPos);
 
-        // document.getElementsByClassName("sticky-bar").style.bottom = "40px";
-      } else {
-        document.getElementById("navbar").style.top = "-100px";
-        if (tracksDivLaptop.style.display != "none")
-          tracksDivLaptop.style.display = "none";
-        // document.getElementsByClassName("sticky-bar").style.bottom = "0";
+      if (currentScrollPos > 0) {
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+
+          // document.getElementsByClassName("sticky-bar").style.bottom = "40px";
+        } else {
+          document.getElementById("navbar").style.top = "-100px";
+          if (tracksDivLaptop.style.display != "none")
+            tracksDivLaptop.style.display = "none";
+          // document.getElementsByClassName("sticky-bar").style.bottom = "0";
+        }
+        prevScrollpos = currentScrollPos;
       }
-      prevScrollpos = currentScrollPos;
     };
   }
 }
