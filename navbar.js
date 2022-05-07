@@ -343,7 +343,7 @@ function myFunction(x) {
         <div class="nav-log-mobile">
           <a
             href="https://event.webinarjam.com/register/28/8q8lvbnp"
-            class="nav-log-mobile-btn"
+            class="nav-log-mobile-btn reg-cstm-link"
             >Log In / Sign Up</a
           >
         </div>
@@ -767,7 +767,7 @@ function myFunction(x) {
             <div class="nav-log-link-laptop">
               <a
                 href="https://event.webinarjam.com/register/28/8q8lvbnp"
-                class="nav-log-laptop-btn"
+                class="nav-log-laptop-btn reg-cstm-link"
                 >Log In / Sign Up</a
               >
             </div>
