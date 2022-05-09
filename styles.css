@@ -1827,8 +1827,7 @@ section {
 .features-row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -12px;
-  margin-left: -12px;
+
   color: #f8f9fa !important;
 }
 
