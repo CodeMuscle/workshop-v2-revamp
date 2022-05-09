@@ -688,7 +688,7 @@ section {
 .work-icons {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 32px;
+  grid-column-gap: 16px;
   margin-top: 32px;
 }
 
