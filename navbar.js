@@ -342,8 +342,8 @@ function myFunction(x) {
         </div>
         <div class="nav-log-mobile">
           <a
-            href="https://event.webinarjam.com/register/28/8q8lvbnp"
-            class="nav-log-mobile-btn reg-cstm-link"
+            href="https://trainity.space/"
+            class="nav-log-mobile-btn"
             >Log In / Sign Up</a
           >
         </div>
@@ -766,8 +766,8 @@ function myFunction(x) {
             </div>
             <div class="nav-log-link-laptop">
               <a
-                href="https://event.webinarjam.com/register/28/8q8lvbnp"
-                class="nav-log-laptop-btn reg-cstm-link"
+                href="https://trainity.space/"
+                class="nav-log-laptop-btn"
                 >Log In / Sign Up</a
               >
             </div>
