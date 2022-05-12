@@ -926,15 +926,17 @@ section {
 
   .video-image {
     position: relative;
-    right: -45px;
+    right: -15%;
+    max-width: 80%;
     background: #fafafa;
-    box-shadow: 0 5.83781px 11.6756px rgb(73 81 96 / 10%);
+    /* box-shadow: 0 5.83781px 11.6756px rgb(73 81 96 / 10%); */
     border-radius: 5px;
   }
 
   .gif-back {
     position: relative;
     max-width: 100%;
+    justify-content: center;
     vertical-align: middle;
   }
 

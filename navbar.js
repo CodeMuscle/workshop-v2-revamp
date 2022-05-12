@@ -37,7 +37,7 @@ function myFunction(x) {
           <a
             href="#"
             class="nav-track-mobile-btn"
-            onClick="document.getElementById('tracks-div-mobile').style.display='block'"
+            onClick="navbarMobile()"
             >Tracks</a
           >
           <div class="nav-tracks-mobile" id="tracks-div-mobile">
@@ -436,7 +436,7 @@ function myFunction(x) {
               <a
                 href="#"
                 class="nav-track-laptop-btn"
-                onClick="document.getElementById('tracks-div-laptop').style.display='block'"
+                onClick="navbarLaptop()"
                 >Tracks</a
               >
               <div class="nav-laptop-tracks" id="tracks-div-laptop">
@@ -826,3 +826,33 @@ function myFunction(x) {
 var x = window.matchMedia("(max-width: 991px)");
 myFunction(x); // Call listener function at run time
 x.addListener(myFunction);
+
+const navbarMobile = () => {
+  const navMobile = document.getElementById("tracks-div-mobile");
+  if (navMobile.classList.contains("on")) {
+    navMobile.style.display = "none";
+    navMobile.classList.remove("on");
+  } else {
+    navMobile.style.display = "block";
+    navMobile.classList.add("on");
+  }
+
+  // navMobile.classList.add("on");
+  // console.log(navMobile.classList);
+};
+
+// document.getElementById("tracks-div-laptop").style.display = "block";
+
+const navbarLaptop = () => {
+  const navLaptop = document.getElementById("tracks-div-laptop");
+  if (navLaptop.classList.contains("on")) {
+    navLaptop.style.display = "none";
+    navLaptop.classList.remove("on");
+  } else {
+    navLaptop.style.display = "block";
+    navLaptop.classList.add("on");
+  }
+
+  // navMobile.classList.add("on");
+  // console.log(navMobile.classList);
+};
