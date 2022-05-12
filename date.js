@@ -13,22 +13,15 @@ for (let i = 0; i < regLinks.length; i++) {
   let minutes = m.minutes();
   // console.log(hours, minutes);
 
-  if (hours >= 11 && hours <= 19) {
-    if ((hours == 19 && minutes < 30) || hours < 19)
-      regLinks[i].setAttribute(
-        "href",
-        "https://event.webinarjam.com/register/56/wg93ys4g"
-      );
-    if (hours == 19 && minutes > 30) {
-      regLinks[i].setAttribute(
-        "href",
-        "https://event.webinarjam.com/register/19/5092vam"
-      );
-    }
+  if (hours >= 11 && hours <= 20) {
+    regLinks[i].setAttribute(
+      "href",
+      "https://event.webinarjam.com/register/28/8q8lvbnp"
+    );
   } else {
     regLinks[i].setAttribute(
       "href",
-      "https://event.webinarjam.com/register/19/5092vam"
+      "https://event.webinarjam.com/register/28/8q8lvbnp"
     );
   }
 }
@@ -38,12 +31,8 @@ for (let i = 0; i < timeLinks.length; i++) {
   let hours = m.hours();
   let minutes = m.minutes();
 
-  if (hours >= 11 && hours <= 19) {
-    if ((hours == 19 && minutes < 30) || hours < 19)
-      timeLinks[i].innerHTML = "7:30 PM";
-    if (hours == 19 && minutes > 30) {
-      timeLinks[i].innerHTML = "11:00 AM";
-    }
+  if (hours >= 11 && hours <= 20) {
+    timeLinks[i].innerHTML = "8:00 PM";
   } else {
     timeLinks[i].innerHTML = "11:00 AM";
   }
@@ -55,16 +44,10 @@ function redirect1() {
   let minutes = m.minutes();
   // console.log(hours, minutes);
 
-  if (hours >= 11 && hours <= 19) {
-    if ((hours == 19 && minutes < 30) || hours < 19)
-      window.location.href =
-        "https://event.webinarjam.com/register/56/wg93ys4g";
-
-    if (hours == 19 && minutes > 30) {
-      window.location.href = "https://event.webinarjam.com/register/19/5092vam";
-    }
+  if (hours >= 11 && hours <= 20) {
+    window.location.href = "https://event.webinarjam.com/register/28/8q8lvbnp";
   } else {
-    window.location.href = "https://event.webinarjam.com/register/19/5092vam";
+    window.location.href = "https://event.webinarjam.com/register/28/8q8lvbnp";
   }
 }
 
@@ -80,12 +63,12 @@ for (let i = 0; i < len; i++) {
   let hours = m.hours();
   let minutes = m.minutes();
   // console.log(hours, minutes);
-  if (hours >= 19 && hours <= 23 && minutes <= 59) {
-    if (hours === 19 && minutes > 30) {
+  if (hours >= 20 && hours <= 23) {
+    if (hours === 20 && minutes > 0) {
       m.add({
         days: 1,
       });
-    } else if (hours > 19) {
+    } else if (hours > 20) {
       m.add({
         days: 1,
       });
