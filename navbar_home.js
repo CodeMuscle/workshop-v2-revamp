@@ -77,7 +77,7 @@ function myFunction(x) {
                 </svg>
                 <div class="nav-track-content-mobile">
                   <a
-                    href="./data_home.html.html"
+                    href="./data_home.html"
                     style="
                       display: block;
                       color: #495057;
@@ -222,7 +222,7 @@ function myFunction(x) {
                 </svg>
                 <div class="nav-track-content-mobile">
                   <a
-                    href="./marketing_home.html.html"
+                    href="./marketing_home.html"
                     style="
                       display: block;
                       color: #495057;
@@ -480,7 +480,7 @@ function myFunction(x) {
                       </svg>
                       <div class="nav-track-content-laptop">
                         <a
-                          href="./data_home.html.html"
+                          href="./data_home.html"
                           style="
                             display: block;
                             color: #495057;
@@ -639,7 +639,7 @@ function myFunction(x) {
                       </svg>
                       <div class="nav-track-content-laptop">
                         <a
-                          href="./marketing_home.html.html"
+                          href="./marketing_home.html"
                           style="
                             display: block;
                             color: #495057;
