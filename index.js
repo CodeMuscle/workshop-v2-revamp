@@ -67,7 +67,7 @@ console.log("HELLO WORLD");
 
 const internList = document.querySelector("#intern");
 const trainList = document.querySelector("#train");
-const lorList = document.querySelector("#lor");
+// const lorList = document.querySelector("#lor");
 const certiImage = document.querySelector(".certi-actual-image");
 
 internList.classList.add("certi-active-list");
@@ -79,7 +79,7 @@ internList.addEventListener("click", (e) => {
   e.preventDefault();
   internList.classList.add("certi-active-list");
   trainList.classList.remove("certi-active-list");
-  lorList.classList.remove("certi-active-list");
+
   certiImage.setAttribute("src", "./InternshipCertificate.png");
 });
 
@@ -87,20 +87,12 @@ trainList.addEventListener("click", (e) => {
   console.log("CLICKED");
   e.preventDefault();
   internList.classList.remove("certi-active-list");
-  lorList.classList.remove("certi-active-list");
+
   trainList.classList.add("certi-active-list");
   certiImage.setAttribute(
     "src",
     "https://trainity.in/assets/img/trainity/training/1.png"
   );
-});
-lorList.addEventListener("click", (e) => {
-  console.log("CLICKED");
-  e.preventDefault();
-  internList.classList.remove("certi-active-list");
-  trainList.classList.remove("certi-active-list");
-  lorList.classList.add("certi-active-list");
-  certiImage.setAttribute("src", "./LOR.png");
 });
 
 // var scrollEventHandler = function () {
