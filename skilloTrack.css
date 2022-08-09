@@ -564,11 +564,7 @@
   object-fit: contain;
   vertical-align: middle;
   border-style: none;
-  transform: translateY(-15%);
-}
-
-#fb-scale {
-  transform: translateY(-15%) scale(1.2);
+  transform: translateY(-15%) scale(2.5);
 }
 
 @media screen and (max-width: 575px) {
