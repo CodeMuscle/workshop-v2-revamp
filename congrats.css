@@ -877,10 +877,11 @@ body {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  width: 206px;
+  /* display: flex; */
+  width: 106px;
   height: 65px;
   margin-left: 14px;
+  transform: translateY(-5px);
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -1456,10 +1457,10 @@ body {
   }
 
   .div-block-14 {
-    width: 47%;
+    width: 20%;
     height: auto;
-    margin-right: -2px;
     margin-left: 0;
+    transform: translateY(0px);
   }
 
   .img {
