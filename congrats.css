@@ -1,3 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
 body {
   background-color: #0d2129;
   font-family: Inter, sans-serif;
@@ -873,7 +917,7 @@ body {
 }
 
 .text-block-3 {
-  width: 100.0002%;
+  width: 100%;
   color: #fbfcf8;
   font-size: 24px;
   line-height: 1.1;
@@ -1079,6 +1123,16 @@ body {
 }
 
 @media screen and (max-width: 479px) {
+  body {
+    background-color: #0d2129;
+    font-family: Inter, sans-serif;
+    color: #fbfcf8;
+    font-size: 36px;
+    line-height: 1.5;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+  }
   .container {
     max-width: none;
   }
@@ -1374,7 +1428,7 @@ body {
   }
 
   .div-block-13 {
-    height: 124px;
+    height: 104px;
     margin-top: -23px;
     margin-bottom: -23px;
     margin-left: 18px;
@@ -1405,6 +1459,7 @@ body {
     width: 47%;
     height: auto;
     margin-right: -2px;
+    margin-left: 0;
   }
 
   .img {

@@ -47,10 +47,8 @@
               ></span>
             </h1>
             <h1 class="heading-7 big">
-              11:00<span class="text-span-4">AM</span><br /><span
-                class="text-span-5"
-                >Tommorow</span
-              >
+              11:00<span class="text-span-4">AM</span><br />
+              <span class="text-span-5" id="tense">Tommorow</span>
             </h1>
           </div>
           <div class="div-block-15">
@@ -128,6 +126,7 @@
       var today = new Date();
       var date = today.getDate();
       var month = today.getMonth();
+      var hour = today.getHours();
       var mon = [
         "Jan",
         "Feb",
@@ -142,9 +141,15 @@
         "Nov",
         "Dec",
       ];
-
+      var tens;
+      if (hour < 15) {
+        tens = "Today";
+      } else {
+        tens = "Tommorow";
+      }
       document.getElementById("todaydate").innerHTML = date;
       document.getElementById("month").innerHTML = mon[month];
+      document.getElementById("tense").innerHTML = tens;
     </script>
   </body>
 </html>
