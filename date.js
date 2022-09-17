@@ -16,12 +16,12 @@ for (let i = 0; i < regLinks.length; i++) {
   if (hours >= 11 && hours <= 20) {
     regLinks[i].setAttribute(
       "href",
-      "https://event.webinarjam.com/register/76/8q8lvb1p"
+      "https://event.webinarjam.com/register/28/8q8lvbnp"
     );
   } else {
     regLinks[i].setAttribute(
       "href",
-      "https://event.webinarjam.com/register/76/8q8lvb1p"
+      "https://event.webinarjam.com/register/80/wg93ys7g"
     );
   }
 }
