@@ -16,12 +16,12 @@ for (let i = 0; i < regLinks.length; i++) {
   if (hours >= 11 && hours <= 20) {
     regLinks[i].setAttribute(
       "href",
-      "https://event.webinarjam.com/register/76/8q8lvb1p"
+      "https://event.webinarjam.com/register/80/wg93ys7g"
     );
   } else {
     regLinks[i].setAttribute(
       "href",
-      "https://event.webinarjam.com/register/76/8q8lvb1p"
+      "https://event.webinarjam.com/register/80/wg93ys7g"
     );
   }
 }
@@ -45,9 +45,9 @@ function redirect1() {
   // console.log(hours, minutes);
 
   if (hours >= 11 && hours <= 20) {
-    window.location.href = "https://event.webinarjam.com/register/76/8q8lvb1p";
+    window.location.href = "https://event.webinarjam.com/register/80/wg93ys7g";
   } else {
-    window.location.href = "https://event.webinarjam.com/register/76/8q8lvb1p";
+    window.location.href = "https://event.webinarjam.com/register/80/wg93ys7g";
   }
 }
 
