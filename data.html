@@ -1803,6 +1803,15 @@ href="https://tally.so#tally-open=mJ9P8o&amp;tally-emoji-animation=wave"
   <script type="text/javascript" src="assets/js/theme.js"></script>
   <!-- Removes page load animation when window is finished loading -->
 
+  <!-- Lazy Loading -->
+  <script>
+    const images = document.querySelectorAll("img");
+    images.forEach((image) => {
+      image.setAttribute('loading', 'lazy');
+    })
+
+  </script>
+
   <script type="text/javascript">
     window.addEventListener("load", function() {
       document.querySelector("body").classList.add("loaded");
