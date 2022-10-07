@@ -289,7 +289,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               
             </ul>
           </div>
-          <a href="#fee" class="btn btn-primary ml-lg-3">Enroll Now</a>
+          <a href="https://event.webinarjam.com/register/98/04klvh0g" class="btn btn-primary ml-lg-3">Enroll Now</a>
         </div>
       </div>
     </nav>
@@ -475,11 +475,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="" onclick="return false;" class="card card-sm card-body flex-row align-items-center hover-shadow-3d">
             <img class="icon icon-lg bg-primary-2" src="assets/img/icons/theme/general/thunder-move.svg" alt="icon" data-inject-svg />
             <div class="ml-3">
-              <h5 class="mb-0">
-                <span class="set-date">
-                            <span class="_date"></span>
-                            <span class="_month"></span>, </span
-                          ><span class="_year"></span></span>
+              <h5 class="mb-0" id="reg_time3">
+                
               </h5>
               <span>Registration Deadline</span>
             </div>
@@ -2873,7 +2870,7 @@ Draft and prepare a business proposal for a freelance project</h5>
         document.getElementById("reg_time").innerHTML="Registration Closing: " +`${next_sunday.getDate()}`+` ${months[next_sunday.getMonth()]}`+", "+ `${1900+next_sunday.getYear()}`+" at 11:00 AM"
       document.getElementById("reg_time1").innerHTML="Registration Closing at 11:00 AM, " +`${next_sunday.getDate()}`+` ${months[next_sunday.getMonth()]}`+", "+ `${1900+next_sunday.getYear()}`
       document.getElementById("reg_time2").innerHTML=`<h5>Registration Closing at 11:00 AM, ${next_sunday.getDate()} ${months[next_sunday.getMonth()]} ${1900+next_sunday.getYear()}</h5>`
-     
+      document.getElementById("reg_time3").innerHTML=`${next_sunday.getDate()}`+` ${months[next_sunday.getMonth()]}`+", "+ `${1900+next_sunday.getYear()}`
          </script>
   <script type="text/javascript" src="assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/popper.min.js"></script>
