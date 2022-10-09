@@ -2864,7 +2864,6 @@ Draft and prepare a business proposal for a freelance project</h5>
   <!-- Required vendor scripts (Do not remove) -->
       <script src="./coupon.js"></script>
       <script src="./moment.min.js"></script>
-      <script src="./date.js"></script>
       <!-- <script src="./date.js"></script> -->
       <script>
         const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -2881,15 +2880,30 @@ Draft and prepare a business proposal for a freelance project</h5>
            return resultDate;
         }
         var next_sunday=getNextDayOfWeek(new Date(),0);
-       
-        document.getElementById("reg_time").innerHTML="Registration Closing: 11:00 AM, " +`${next_sunday.getDate()}`+` ${months[next_sunday.getMonth()]}`+", "+ `${1900+next_sunday.getYear()}`
-      document.getElementById("reg_time1").innerHTML="Registration Closing: 11:00 AM, " +`${next_sunday.getDate()}`+` ${months[next_sunday.getMonth()]}`+", "+ `${1900+next_sunday.getYear()}`
-      document.getElementById("reg_time2").innerHTML=`<h5>Registration Closing: 11:00 AM,  ${next_sunday.getDate()} ${months[next_sunday.getMonth()]} ${1900+next_sunday.getYear()}</h5>`
-      document.getElementById("reg_time3").innerHTML=`${next_sunday.getDate()}`+` ${months[next_sunday.getMonth()]}`+", "+ `${1900+next_sunday.getYear()}`
+        document.getElementById("reg_time").innerHTML=`Registration Closing: <span class="_time">11:00 AM</span>,
+                  <span class="set-date">
+                    <span class="_date"></span> 
+                    <span class="_month"></span></span
+                  >, <span class="_year"></span
+                >`
+      document.getElementById("reg_time1").innerHTML=`Registration Closing: <span class="_time">11:00 AM</span>,
+                  <span class="set-date">
+                    <span class="_date"></span> 
+                    <span class="_month"></span></span
+                  >, <span class="_year"></span
+                >`
+      document.getElementById("reg_time2").innerHTML=`<h5>Registration Closing: <span class="_time">11:00 AM</span>,
+                  <span class="set-date">
+                    <span class="_date"></span> 
+                    <span class="_month"></span></span
+                  >, <span class="_year"></span
+                ></h5>`
          </script>
   <script type="text/javascript" src="assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/popper.min.js"></script>
   <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  <script src="./date.js"></script>
+
 
   <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
 

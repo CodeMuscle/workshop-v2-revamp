@@ -1754,7 +1754,6 @@ href="https://tally.so#tally-open=mJ9P8o&amp;tally-emoji-animation=wave"
       <script src="./coupon.js"></script>
       <!-- <script src="./date.js"></script> -->
       <script src="./moment.min.js"></script>
-      <script src="./date.js"></script>
       
 
   <script type="text/javascript" src="assets/js/jquery.min.js"></script>
@@ -1914,11 +1913,27 @@ href="https://tally.so#tally-open=mJ9P8o&amp;tally-emoji-animation=wave"
       }
       var next_sunday=getNextDayOfWeek(new Date(),0);
       // document.getElementById("home-line4").innerHTML="Next Batch Application Deadline: 11:00 AM, " +`${next_sunday.getDate()}`+` ${months[next_sunday.getMonth()]}`+", "+ `${1900+next_sunday.getYear()}`;
-      document.getElementById("reg_time").innerHTML="Registration Closing: 11:00 AM, " +`${next_sunday.getDate()}`+` ${months[next_sunday.getMonth()]}`+", "+ `${1900+next_sunday.getYear()}`
-      document.getElementById("reg_time1").innerHTML="Registration Closing: 11:00 AM, " +`${next_sunday.getDate()}`+` ${months[next_sunday.getMonth()]}`+", "+ `${1900+next_sunday.getYear()}`
-      document.getElementById("reg_time2").innerHTML=`<h5>Registration Closing: 11:00 AM,  ${next_sunday.getDate()} ${months[next_sunday.getMonth()]} ${1900+next_sunday.getYear()}</h5>`
-     
+      document.getElementById("reg_time").innerHTML=`Registration Closing: <span class="_time">11:00 AM</span>,
+                  <span class="set-date">
+                    <span class="_date"></span> 
+                    <span class="_month"></span></span
+                  >, <span class="_year"></span
+                >`
+      document.getElementById("reg_time1").innerHTML=`Registration Closing: <span class="_time">11:00 AM</span>,
+                  <span class="set-date">
+                    <span class="_date"></span> 
+                    <span class="_month"></span></span
+                  >, <span class="_year"></span
+                >`
+      document.getElementById("reg_time2").innerHTML=`<h5>Registration Closing: <span class="_time">11:00 AM</span>,
+                  <span class="set-date">
+                    <span class="_date"></span> 
+                    <span class="_month"></span></span
+                  >, <span class="_year"></span
+                ></h5>`
        </script>
+      <script src="./date.js"></script>
+
 </body>
 
 </html>

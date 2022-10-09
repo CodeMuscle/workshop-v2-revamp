@@ -3936,17 +3936,20 @@
     }
     var next_sunday = getNextDayOfWeek(new Date(), 0);
     document.getElementById("home-line4").innerHTML =
-      " Registration Closing: 11:00 AM, " +
-      `${next_sunday.getDate()}` +
-      ` ${months[next_sunday.getMonth()]}` +
-      ", " +
-      `${1900 + next_sunday.getYear()}`;
-    document.getElementById("reg_time").innerHTML =
-      "Registration Closing: 11:00 AM, " +
-      `${next_sunday.getDate()}` +
-      ` ${months[next_sunday.getMonth()]}` +
-      ", " +
-      `${1900 + next_sunday.getYear()}`;
+      ` Registration Closing: <span class="_time"></span>, ` +
+      ` <span class="set-date">
+                    <span class="_date"></span>
+                    <span class="_month"></span></span
+                  >, <span class="_year"></span
+                >`;
+    document.getElementById(
+      "reg_time"
+    ).innerHTML = `Registration Closing: <span class="_time">11:00 AM</span>,
+                  <span class="set-date">
+                    <span class="_date"></span> 
+                    <span class="_month"></span></span
+                  >, <span class="_year"></span
+                >`;
   </script>
 
   <!-- Lazy Loading -->
