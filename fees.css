@@ -10684,27 +10684,6 @@ figcaption {
   margin: 20px 100px;
 }
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
-  .topbox {
-    flex-direction: column;
-    margin: 20px 20px;
-  }
-  .questions-commitment-bond {
-    margin: 20px 0px;
-  }
-  .section-header {
-    font-size: 36px;
-  }
-  .heading-28,
-  .heading-12-copy {
-    margin-top: 30px;
-    font-size: 19px;
-  }
-  .accord-trigger {
-    width: 350px;
-  }
-}
 .img-box {
   width: 33.66666667%;
   margin-right: 40px;
@@ -10770,4 +10749,25 @@ figcaption {
   border-radius: 40px;
   font-size: 20px;
   font-weight: bold;
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .topbox {
+    flex-direction: column;
+    margin: 20px 20px;
+  }
+  .questions-commitment-bond {
+    margin: 20px 20px;
+  }
+  .section-header {
+    font-size: 36px;
+  }
+  .heading-28,
+  .heading-12-copy {
+    margin-top: 30px;
+    font-size: 19px;
+  }
+  .accord-trigger {
+    width: 320px;
+  }
 }
