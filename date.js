@@ -13,7 +13,7 @@ for (let i = 0; i < regLinks.length; i++) {
   let minutes = m.minutes();
   // console.log(hours, minutes);
 
-  if (hours >= 11 && hours <= 20) {
+  if (hours >= 11 && hours < 20) {
     regLinks[i].setAttribute(
       "href",
       "https://event.webinarjam.com/register/76/8q8lvb1p"
@@ -30,8 +30,8 @@ for (let i = 0; i < timeLinks.length; i++) {
   let m = moment();
   let hours = m.hours();
   let minutes = m.minutes();
-
-  if (hours >= 11 && hours <= 20) {
+  console.log(hours);
+  if (hours >= 11 && hours < 20) {
     timeLinks[i].innerHTML = "8:00 PM";
   } else {
     timeLinks[i].innerHTML = "11:00 AM";
@@ -44,7 +44,7 @@ function redirect1() {
   let minutes = m.minutes();
   // console.log(hours, minutes);
 
-  if (hours >= 11 && hours <= 20) {
+  if (hours >= 11 && hours < 20) {
     window.location.href = "https://event.webinarjam.com/register/76/8q8lvb1p";
   } else {
     window.location.href = "https://event.webinarjam.com/register/76/8q8lvb1p";
