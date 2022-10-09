@@ -608,7 +608,8 @@
   padding: 10px 20px;
   justify-self: flex-end;
   border-radius: 32px;
-  background: linear-gradient(180deg, #48bf84, #3aa771);
+  /* background: linear-gradient(180deg, #48bf84, #3aa771); */
+  background: #000;
   color: #fff;
 }
 
@@ -655,8 +656,9 @@
   }
 
   .pricing-btn {
-    background: linear-gradient(180deg, #48bf84, #3aa771);
+    /* background: linear-gradient(180deg, #48bf84, #3aa771); */
     color: #fff;
+    background: #000;
     border-radius: 32px;
     padding: 10px 40px;
     border: none;
@@ -665,5 +667,8 @@
     font-size: 16px;
     /* font-weight: 500; */
     line-height: 24px;
+  }
+  .sticky-arrow {
+    width: 15px;
   }
 }

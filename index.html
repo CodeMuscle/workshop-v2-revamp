@@ -1801,7 +1801,7 @@
         <div class="certi-head-content">
           <h2 class="certi-head">Work-Ex Certificates</h2>
           <p class="certi-para">
-            During this program, you will gain 3 work experience certificates
+            During this program, you will gain 2 work experience certificates
             from Trainity.
           </p>
         </div>
@@ -3929,22 +3929,20 @@
       // Code to check that date and dayOfWeek are valid left as an exercise ;)
 
       var resultDate = new Date(date.getTime());
-if(resultDate.getHours()>=11){
-      resultDate.setDate(
-        date.getDate() + (1)
-      );
-}
+      if (resultDate.getHours() >= 11) {
+        resultDate.setDate(date.getDate() + 1);
+      }
       return resultDate;
     }
     var next_sunday = getNextDayOfWeek(new Date(), 0);
     document.getElementById("home-line4").innerHTML =
-      " Registration Closing at 11:00 AM " +
+      " Registration Closing: 11:00 AM, " +
       `${next_sunday.getDate()}` +
       ` ${months[next_sunday.getMonth()]}` +
       ", " +
       `${1900 + next_sunday.getYear()}`;
     document.getElementById("reg_time").innerHTML =
-      "Registration Closing at 11:00 AM, " +
+      "Registration Closing: 11:00 AM, " +
       `${next_sunday.getDate()}` +
       ` ${months[next_sunday.getMonth()]}` +
       ", " +
