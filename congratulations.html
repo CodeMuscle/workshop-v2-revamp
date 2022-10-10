@@ -103,7 +103,7 @@
             </div>
             <div class="div-block-16">
               <div class="text-block-3">
-                432
+                <span class="reg-number"></span>
                 <span class="text-span-6">peoples have registered in last</span>
                 24 hrs.
               </div>
@@ -139,12 +139,12 @@
             <div class="task-name">
               <h1 class="heading-8">Complete Next Steps</h1>
               <p class="paragraph-2">
-                Get to know which tech career is best for you
+                Join our whatsapp group to get important details
               </p>
             </div>
           </div>
           <a
-            href="https://tally.so/r/wgDVLO"
+            href="https://chat.whatsapp.com/Je7rieq6xbKDP5bMlNIZX5"
             target="_blank"
             class="button-3 w-button"
             >Continue <i class="fa fa-arrow-right"></i>
@@ -172,14 +172,21 @@
         "Dec",
       ];
       var tens;
-      if (hour < 15) {
+      if (hour < 11) {
         tens = "Today";
       } else {
         tens = "Tommorow";
+        date++;
       }
       document.getElementById("todaydate").innerHTML = date;
       document.getElementById("month").innerHTML = mon[month];
       document.getElementById("tense").innerHTML = tens;
+    </script>
+    <script>
+      const regNumber = document.querySelector(".reg-number");
+      let max = 432;
+      let min = 499;
+      regNumber.innerHTML = Math.floor(Math.random() * (max - min + 1) + min);
     </script>
   </body>
 </html>
