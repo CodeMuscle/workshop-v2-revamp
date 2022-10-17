@@ -1,0 +1,38 @@
+[hidden],
+template {
+  display: none;
+}
+.page-padding {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+@media screen and (max-width: 767px) {
+    .page-padding {
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+      }
+}
+.container-large {
+    width: 100%;
+    max-width: 80rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+.FAQ {
+    padding: 0px 6px;
+    margin-bottom: 6rem;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  .active-section {
+    color: #158e5e;
+  }
+  .questions {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e5e7eb;
+    cursor: pointer;
+  }
