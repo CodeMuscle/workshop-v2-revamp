@@ -4067,7 +4067,7 @@
   grid-auto-columns: 1fr;
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
-  -ms-grid-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr ;
   grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
@@ -10203,6 +10203,7 @@
   -ms-grid-row-span: 1;
   grid-row-end: 3;
 }
+
 .growth-sec #w-node-_001ce9c2-fc2d-5f76-9371-39ae713d3ef5-3deec4ce,
 .growth-sec #w-node-_001ce9c2-fc2d-5f76-9371-39ae713d3ef7-3deec4ce,
 .growth-sec #w-node-_0458757c-ff62-2a32-6399-9820a3cc76a4-3deec4ce,
@@ -10467,33 +10468,7 @@
   color: #646464;
   
 }
-.workshop-working_component{
-  position: relative;
-    z-index: 1;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 60rem;
-    margin-right: auto;
-    margin-left: auto;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
- 
-    justify-content: center;
-    justify-items: start;
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    grid-auto-columns: 1fr;
-    align-items: stretch;
-    
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 1.5rem;
-    -ms-grid-columns: 1fr 1fr ;
-    grid-template-columns: 1fr 1fr ;
-   
-    grid-template-rows: auto;
-}
+
 .about-card-grids {
   width: 100%;
   grid-column-gap: 40px;
@@ -10538,7 +10513,18 @@
   color: #646464;
   line-height: 150%;
 }
+.workshop-working_component{
+  margin:40px;
+  display:flex;
+  flex-direction: row;
+  gap:100px;
+}
 @media screen and (max-width: 767px) {
+  .workshop-working_component{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+  }
 .about-card-grids {
   max-width: 360px;
   -ms-grid-columns: 1fr;
