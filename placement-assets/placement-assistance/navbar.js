@@ -6,7 +6,7 @@ function myFunction(x) {
   if (x.matches) {
     newNavBar.innerHTML = `<nav class="mobile" id="navbar">
         <div class="nav-logo-mobile">
-         <a href="index.html"> <img
+         <a href="./index.html"> <img
          src="https://trainity.in/assets/img/trainity/logo/2.svg"
             alt=""
             class="trainity-img"
@@ -85,7 +85,7 @@ function myFunction(x) {
                       color: #495057;
                       text-decoration: none;
                     "
-                    ><h5 class="nav-content-head-mobile" style="font-size: 1rem !important; font-weight:600">Data Analytics</h5></a
+                    ><h5 class="nav-content-head-mobile" style="font-size: 1rem !important;">Data Analytics</h5></a
                   >
                   <h5 class="nav-content-rating-mobile" style="font-size: 1rem !important;">4.4 (3200+ ratings)</h5>
                   <div class="nav-content-stars-mobile">
@@ -230,7 +230,7 @@ function myFunction(x) {
                       color: #495057;
                       text-decoration: none;
                     "
-                    ><h5 class="nav-content-head-mobile" style="font-size: 1rem !important;font-weight:600">
+                    ><h5 class="nav-content-head-mobile" style="font-size: 1rem !important;">
                       Digital Marketing
                     </h5></a
                   >
@@ -351,10 +351,10 @@ function myFunction(x) {
         </div>
         <div class="nav-list-mobile">
         <a
-          href="about-us.html"
+          href="aboutus.html"
           class="nav-track-mobile-btn"
          
-          > About Us</a>
+          > About us</a>
         </div>
         <div class="nav-list-mobile">
           <a
@@ -457,7 +457,7 @@ function myFunction(x) {
     newNavBar.innerHTML = `<nav class="laptop" id="navbar">
         <div class="laptop-nav-container">
           <div class="nav-logo-laptop">
-          <a href="index.html">  <img
+          <a href="./index.html">  <img
               src="https://trainity.in/assets/img/trainity/logo/2.svg"
               alt=""
               class="trainity-img"
@@ -471,6 +471,7 @@ function myFunction(x) {
                 href="#"
                 class="nav-track-laptop-btn"
                 onClick="navbarLaptop()"
+                style="margin-top:10px;"
                 >Tracks</a
               >
               <div class="nav-laptop-tracks" id="tracks-div-laptop">
@@ -521,7 +522,7 @@ function myFunction(x) {
                             text-decoration: none;
                           "
                         >
-                          <h5 class="nav-content-head-laptop" style="font-size: 1rem !important;font-weight:600">
+                          <h5 class="nav-content-head-laptop" style="font-size: 1rem !important;">
                             Data Analytics
                           </h5>
                         </a>
@@ -680,7 +681,7 @@ function myFunction(x) {
                             text-decoration: none;
                           "
                         >
-                          <h5 class="nav-content-head-laptop" style="font-size: 1rem !important;font-weight:600">
+                          <h5 class="nav-content-head-laptop" style="font-size: 1rem !important;">
                             Digital Marketing
                           </h5>
                         </a>
@@ -807,9 +808,9 @@ function myFunction(x) {
             </div>
             <div class="nav-track-link-laptop">
             <a
-              href="about-us.html"
+              href="aboutus.html"
               class="nav-fees-laptop-btn"
-             
+              
               > About Us</a>
             </div>
             <div class="nav-track-link-laptop">
