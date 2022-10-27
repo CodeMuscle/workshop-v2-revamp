@@ -260,13 +260,13 @@ body {
   margin-top: 3rem;
 }
 
-.container {
+.navcontainer {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "header home-img";
 }
 
-.container {
+.navcontainer {
   width: 100%;
 
   margin-right: auto;
@@ -274,7 +274,7 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .container {
+  .navcontainer {
     max-width: 1350px;
     padding-right: 60px;
     padding-left: 60px;
@@ -282,7 +282,7 @@ body {
 }
 
 @media (min-width: 990px) {
-  .container {
+  .navcontainer {
     padding-right: 60px;
     padding-left: 60px;
   }
@@ -389,7 +389,7 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  .container {
+  .navcontainer {
     grid-template-columns: 3fr 2fr;
   }
 
@@ -408,7 +408,7 @@ body {
     margin-top: 2rem;
   }
 
-  .container {
+  .navcontainer {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
