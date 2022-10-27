@@ -344,6 +344,13 @@ function myFunction(x) {
         </div>
         <div class="nav-list-mobile">
         <a
+          href="workshop.html"
+          class="nav-track-mobile-btn"
+         
+          >Workshop</a>
+        </div>
+        <div class="nav-list-mobile">
+        <a
           href="placement.html"
           class="nav-track-mobile-btn"
          
@@ -797,6 +804,13 @@ function myFunction(x) {
                   </ul>
                 </div>
               </div>
+            </div>
+            <div class="nav-track-link-laptop">
+            <a
+              href="workshop.html"
+              class="nav-fees-laptop-btn"
+             
+              >Workshop</a>
             </div>
             <div class="nav-track-link-laptop">
             <a
