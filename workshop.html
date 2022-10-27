@@ -73,7 +73,7 @@
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
   <link rel="icon" type="image/svg" href="assets/img/trainity/favicon-32x32.svg" />
-  <title>Data Analytics | Trainity</title>
+  <title>Workshop | Trainity</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Internship Certification Program" />
   <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
@@ -83,7 +83,11 @@
   <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2"
     crossorigin="anonymous" />
   <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous" />
-
+  <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/trainity/favicon-32x32.png"
+    />
   <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
@@ -401,14 +405,7 @@
         </style>
 
       </div>
-      <a href="https://app.growthschool.io/checkout-cc-artofadvertising/"
-        class="ts-banner light w-inline-block w-condition-invisible">
-        <div>Growthschool ♥️ Thinkschool</div>
-        <div>
-          <strong>Use code: </strong><span><strong>TS30</strong></span><strong> to get
-          </strong><span><strong>30%</strong></span><strong> discount</strong>
-        </div>
-      </a>
+      
       <main class="main-wrapper">
         <div style="
             background-color: hsla(167.49999999999997, 52.17%, 18.04%, 1);
@@ -2110,10 +2107,7 @@
   <div class="sticky-bar">
     <div class="sticky-content">
       <div class="sticky-heading" id="reg_time2" style="color:black">
-        <!-- <h5>Registration Deadline: <span class="set-date">
-                <span class="_date"></span>
-                <span class="_month"></span>, </span
-              ><span class="_year"></span></h5> -->
+       
       </div>
       <a href="https://event.webinarjam.com/register/76/8q8lvb1p" class="pricing-btn reg-cstm-link">Continue <img
           class="sticky-arrow" src="./arrow.svg" width="12px" style="margin-left: 5px;" alt="">
@@ -2302,11 +2296,12 @@
                     <span class="_month"></span></span
                   >, <span class="_year"></span
                 >`
-    document.getElementById("reg_time2").innerHTML = `<h5>Registration Closing: <span class="_time">11:00 AM</span>,
-                  <span class="set-date">
-                    <span class="_date"></span> 
-                    <span class="_month"></span></span
-                  ></h5>`
+
+    // console.log(document.getElementById("reg_time2"))
+    document.getElementById("reg_time2").innerHTML = `  <h5>Registration Deadline: <span class="set-date">
+                <span class="_date"></span>
+                <span class="_month"></span>, </span
+              ><span class="_year"></span></h5> `
                  
   
   </script>
