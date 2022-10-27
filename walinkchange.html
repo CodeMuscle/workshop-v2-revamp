@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WA LINK CHANGE 
+    </title>
+</head>
+<body>
+    
+<h2>HTML Forms</h2>
+
+<form id="submit">
+  <label for="fname">Password:</label><br>
+  <input type="password" id="password"  placeholder="*********"><br>
+  <label for="lname">WA link</label><br>
+  <input type="text" id="link"  placeholder="http://example"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+<script >
+  var form=document.getElementById('submit')
+form.addEventListener("submit",function(event){
+    event.preventDefault();
+    let key=document.getElementById("password")
+        let link=document.getElementById("link").value
+        if(key.value="mmtrainity28@")
+        { 
+            localStorage.setItem("walink", link);
+        }
+    })
+    
+</script>
+</body>
+</html>

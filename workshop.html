@@ -168,7 +168,7 @@
       .cstm-program-span {
         /* display: inline-block !important; */
         position: absolute;
-        left: 8%;
+        left: 10%;
       }
 
       .cstm-program-li {
@@ -462,7 +462,7 @@
                               stroke-linecap="round" stroke-linejoin="round"></path>
                           </svg>
                         </div>
-                        <div>6th Nov</div>
+                        <div id="reg_timehead1"></div>
                       </div>
                       <div id="w-node-_0858cb14-bf54-2124-cc45-8245dc91d298-5beec4c9" style="background-color: #10322b"
                         class="course-detail-item">
@@ -477,7 +477,7 @@
                           </svg>
                         </div>
                         <div class="flex vertical-on-phone">
-                          <div>4 Pm</div>
+                          <div>11 AM</div>
                           <div class="margin-left margin-xxsmall">
                             onwards
                           </div>
@@ -494,8 +494,8 @@
                           </svg>
                         </div>
                         <div class="flex">
-                          <div>2</div>
-                          <div class="margin-left margin-xxsmall">hours</div>
+                          <div>90</div>
+                          <div class="margin-left margin-xxsmall">Minutes</div>
                         </div>
                       </div>
                     </div>
@@ -544,7 +544,7 @@
                         </div>
                       </div>
                     </div>
-                    <a href="https://app.growthschool.io/checkout-cc-artofadvertising/"
+                    <a href="https://event.webinarjam.com/register/76/8q8lvb1p"
                       class="course-cta w-inline-block">
                       <div class="flex align-center">
                         <div class="margin-right margin-xsmall">
@@ -796,7 +796,7 @@
         transform-style: preserve-3d;
       ">
         <h2 class="flex-main-heading _666px" style="margin-bottom:80px">
-          Fast-track your journey to <span class="faster-span">Professional</span> success
+          Fast-track your journey to Professional success
         </h2>
         <div class="w-layout-grid numeric-points-grid">
           <div id="w-node-_6a0bac83-5ac1-e40f-26f0-4e9e02c8b25d-02c8b256" class="numeric-points-wrapper">
@@ -1042,6 +1042,7 @@
         <div
           id="w-node-ab8eaa04-c155-0989-964c-df01f9d9309f-6b1384ca"
           class="sales-card"
+          style="width:270px;margin:auto"
         >
           <div class="sales-top-card vertical">
             <img
@@ -1058,6 +1059,7 @@
         <div
           id="w-node-_81815895-8c3b-7eb4-25ce-d03a573d5821-6b1384ca"
           class="sales-card"
+          style="width:270px;margin:auto"
         >
           <div class="sales-top-card vertical">
             <img
@@ -1075,6 +1077,7 @@
         <div
           id="w-node-b222cbde-84ac-c4f0-43b8-cdb96de48438-6b1384ca"
           class="sales-card"
+          style="width:270px;margin:auto"
         >
           <div class="sales-top-card vertical">
             <img
@@ -1092,6 +1095,7 @@
         <div
           id="w-node-_213a8da8-e9d2-7581-6486-4bb3e6b6353d-6b1384ca"
           class="sales-card"
+         style="width:270px;margin:auto"
         >
           <div class="sales-top-card vertical">
             <img
@@ -1198,7 +1202,7 @@
               <div class="container-large">
                 <div class="margin-bottom margin-large">
                   <h2 class="text-weight-semibold text-align-center text-color-white">
-                    <span class="underlined white">Meet</span> your Mentor
+                    Meet your <span class="underlined white">Mentor</span> 
                   </h2>
                 </div>
                 <div id="mentor-description" style="
@@ -1342,7 +1346,7 @@
              />
 
             <div class="ml-3">
-              <h5 class="mb-0">Freelancers & Entrepreneurs</h5>
+              <h5 class="mb-0">Freelancers </h5>
               <span>People who want to start their career as a Freelancer and work on their own terms</span>
             </div>
           </a>
@@ -1629,7 +1633,7 @@
                           </div>
                         </div>
                       </div>
-                      <a href="https://app.growthschool.io/checkout-cc-artofadvertising/"
+                      <a href="https://event.webinarjam.com/register/76/8q8lvb1p"
                         class="course-cta w-button" style="padding:10px">Register Now</a><a
                         href="https://app.growthschool.io/checkout-cc-artofadvertising/"
                         class="course-cta w-condition-invisible w-button">Join the Waitlist</a>
@@ -1911,7 +1915,7 @@
                 <div onclick="openAnswer(4)" class="questions py-3 flex text-sm flex-col space-y-2 cursor-pointer q4">
                   Q. Do you have an affiliate program?
                   <div style="color: black" class="answer hidden a4">
-                    Yes, we have an affiliate program which is an intense 12-week Data Analytics Training and Experience Program. You can find all the details about the program on our website 
+                    Yes, we have an affiliate program which is an intense 12 weeks Data Analytics Work-Experience Program. You can find all the details about the program on our website.
                   </div>
                 </div>
               </div>
@@ -2276,9 +2280,15 @@
           date.getDate() + (1)
         );
       }
+      console.log(resultDate)
       return resultDate;
     }
-    var next_sunday = getNextDayOfWeek(new Date(), 0);
+    var next_date= getNextDayOfWeek(new Date(), 0);
+   
+    document.getElementById("reg_timehead1").innerHTML =`<span class="set-date">
+                    <span class="_date"></span> 
+                    <span class="_month"></span></span>`
+  
     // document.getElementById("home-line4").innerHTML="Next Batch Application Deadline: 11:00 AM, " +`${next_sunday.getDate()}`+` ${months[next_sunday.getMonth()]}`+", "+ `${1900+next_sunday.getYear()}`;
     document.getElementById("reg_time").innerHTML = `Registration Closing: <span class="_time">11:00 AM</span>,
                   <span class="set-date">
@@ -2296,8 +2306,9 @@
                   <span class="set-date">
                     <span class="_date"></span> 
                     <span class="_month"></span></span
-                  >, <span class="_year"></span
-                ></h5>`
+                  ></h5>`
+                 
+  
   </script>
   <script src="./date.js"></script>
   <script>

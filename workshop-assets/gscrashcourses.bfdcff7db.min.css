@@ -10537,19 +10537,21 @@
   font-size: 16px;
 }
 .cstm-program-li{
-  width:500px;
-  height:60px;
-  
+  width:350px;
+  height:120px;
+  margin:auto
  }
  .cstm-program-span{
   margin-left:10px;
+  width:250px;
+  
  }
 }
 @media screen and (max-width: 991px) {
 .about-card-grids {
   max-width: 700px;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr ;
+  grid-template-columns: 1fr ;
 }
 .sales-card-text {
   font-size: 18px;

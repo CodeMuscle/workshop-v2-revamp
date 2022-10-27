@@ -5,7 +5,7 @@ let regLinks = document.querySelectorAll(".reg-cstm-link");
 let timeLinks = document.querySelectorAll("._time");
 
 let len = dateElementList.length;
-// console.log(regLinks);
+ console.log(regLinks);
 
 for (let i = 0; i < regLinks.length; i++) {
   let m = moment();

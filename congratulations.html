@@ -189,6 +189,12 @@
       let min = 499;
       regNumber.innerHTML = Math.floor(Math.random() * (max - min + 1) + min);
     </script>
-    <script src="wa_change.js"></script>
+    <script>
+      var name=localStorage.getItem("walink");
+      walink=document.getElementById("walink")
+        console.log(walink)
+        walink.setAttribute("href", name);
+        
+  </script>  
   </body>
 </html>
