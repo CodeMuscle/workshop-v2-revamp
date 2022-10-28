@@ -145,7 +145,6 @@
           </div>
           <a
             href="https://chat.whatsapp.com/EfhnWXycyHi6fMMHHw6oEe"
-            target="_blank"
             class="button-3 w-button"
             id="walink"
             >Continue <i class="fa fa-arrow-right"></i>
@@ -190,11 +189,10 @@
       regNumber.innerHTML = Math.floor(Math.random() * (max - min + 1) + min);
     </script>
     <script>
-      var name=localStorage.getItem("walink");
-      walink=document.getElementById("walink")
-        console.log(walink)
-        walink.setAttribute("href", name);
-        
-  </script>  
+      var name = localStorage.getItem("walink");
+      walink = document.getElementById("walink");
+      // console.log(walink);
+      // walink.setAttribute("href", name);
+    </script>
   </body>
 </html>
