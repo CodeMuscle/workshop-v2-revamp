@@ -417,12 +417,14 @@ function myFunction(x) {
       var currentScrollPos = window.pageYOffset;
       if (currentScrollPos > 0) {
         if (prevScrollpos > currentScrollPos) {
+          console.log("MOVING DOWN");
           document.getElementById("navbar").style.top = "0";
           if (navContentMobile.style.display == "none")
             navContentMobile.style.display = "block";
 
           // document.getElementsByClassName("sticky-bar").style.bottom = "40px";
-        } else {
+        } else if (prevScrollpos != currentScrollPos) {
+          console.log("MOVING UP");
           document.getElementById("navbar").style.top = "-100px";
           if (navContentMobile.style.display != "none") {
             navContentMobile.style.display = "none";

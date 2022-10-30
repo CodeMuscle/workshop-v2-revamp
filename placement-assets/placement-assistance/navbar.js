@@ -351,7 +351,7 @@ function myFunction(x) {
         </div>
         <div class="nav-list-mobile">
         <a
-          href="aboutus.html"
+          href="about-us.html"
           class="nav-track-mobile-btn"
          
           > About us</a>
@@ -808,7 +808,7 @@ function myFunction(x) {
             </div>
             <div class="nav-track-link-laptop">
             <a
-              href="aboutus.html"
+              href="about-us.html"
               class="nav-fees-laptop-btn"
               
               > About Us</a>
