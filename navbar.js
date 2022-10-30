@@ -890,7 +890,7 @@ function myFunction(x) {
           document.getElementById("navbar").style.top = "0";
 
           // document.getElementsByClassName("sticky-bar").style.bottom = "40px";
-        } else {
+        } else if (prevScrollpos != currentScrollPos) {
           document.getElementById("navbar").style.top = "-100px";
           if (tracksDivLaptop.style.display != "none")
             tracksDivLaptop.style.display = "none";
