@@ -1,5 +1,7 @@
 let dateElementList = document.querySelectorAll("._date");
 let monthElementList = document.querySelectorAll("._month");
+let nextDateElementList = document.querySelectorAll("._next_date");
+let nextMonthElementList = document.querySelectorAll("._next_month");
 let yearElementList = document.querySelectorAll("._year");
 let regLinks = document.querySelectorAll(".reg-cstm-link");
 let timeLinks = document.querySelectorAll("._time");
@@ -16,12 +18,12 @@ for (let i = 0; i < regLinks.length; i++) {
   if (hours >= 11 && hours < 20) {
     regLinks[i].setAttribute(
       "href",
-      "https://event.webinarjam.com/register/126/91qlvuok"
+      "https://event.webinarjam.com/register/124/2nrlza82"
     );
   } else {
     regLinks[i].setAttribute(
       "href",
-      "https://event.webinarjam.com/register/126/91qlvuok"
+      "https://event.webinarjam.com/register/124/2nrlza82"
     );
   }
 }
@@ -45,10 +47,61 @@ function redirect1() {
   // console.log(hours, minutes);
 
   if (hours >= 11 && hours < 20) {
-    window.location.href = "https://event.webinarjam.com/register/126/91qlvuok";
+    window.location.href = "https://event.webinarjam.com/register/124/2nrlza82";
   } else {
-    window.location.href = "https://event.webinarjam.com/register/126/91qlvuok";
+    window.location.href = "https://event.webinarjam.com/register/124/2nrlza82";
   }
+}
+
+for (let i = 0; i < nextDateElementList.length; i++) {
+  let dateElement = nextDateElementList[i];
+  let monthElement = nextMonthElementList[i];
+
+  let m = moment();
+
+  let hours = m.hours();
+  let minutes = m.minutes();
+  // console.log(hours, minutes);
+
+  m.add({
+    days: 1,
+  });
+
+  let weekDay = m.format("dddd");
+  let month = m.format("MMMM");
+  let day = m.format("Do");
+  let year = m.format("YYYY");
+
+  function myFunction(x) {
+    if (x.matches) {
+      // If media query matches
+      month = month.slice(0, 3);
+      let sup = day[day.length - 2] + day[day.length - 1];
+      let dayString = "";
+
+      for (let i = 0; i < day.length - 2; i++) {
+        dayString += day[i];
+      }
+
+      dateElement.innerHTML = `<span class = "._next_date">${dayString}<sup>${sup}</sup></span>`;
+      monthElement.textContent = month;
+    } else {
+      month = month;
+      let sup = day[day.length - 2] + day[day.length - 1];
+      let dayString = "";
+
+      for (let i = 0; i < day.length - 2; i++) {
+        dayString += day[i];
+      }
+
+      dateElement.innerHTML = `<span class = "._next_date">${dayString}<sup>${sup}</sup></span>`;
+      monthElement.textContent = month;
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 700px)");
+  myFunction(x); // Call listener function at run time
+  x.addListener(myFunction); // Attach listener function on state changes
 }
 
 for (let i = 0; i < len; i++) {
