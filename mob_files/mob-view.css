@@ -79,6 +79,11 @@ button:focus{
 .people{
         display: block;
         transform: translate(0%, 0%) !important;
+        max-width: 1.5rem;
+}
+
+.star{
+    max-width: 1.5rem;
 }
 
 .tab-desktop{
@@ -266,13 +271,8 @@ button:focus{
     font-size: 2rem;
 }
 
-.project-2{
-    display: none !important;
+.page-wrapper h2{
+    font-size: 28px !important;
 }
-
-.project-3{
-    display: none !important;
-}
-
 
 }
