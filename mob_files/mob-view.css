@@ -19,6 +19,14 @@ button:focus{
     outline: none;
 }
 
+.tab-desktop{
+    display: block;
+}
+
+.tab-mob{
+    display: none;
+}
+
 .sticky-mob{
     display: none !important;
 }
@@ -71,6 +79,30 @@ button:focus{
 .people{
         display: block;
         transform: translate(0%, 0%) !important;
+}
+
+.tab-desktop{
+    display: none;
+}
+
+.tab-mob{
+    display: block;
+}
+
+.row-grid{
+        display: -ms-grid;
+        display: grid;
+        grid-auto-columns: 1fr;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-row-gap: 16px;
+        grid-column-gap: 16px;
+}
+
+.row-grid .mb-3{
+    margin-bottom: 0px !important;
 }
 
 .rating-mob{
