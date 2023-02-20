@@ -234,5 +234,13 @@ button:focus{
     font-size: 2rem;
 }
 
+.project-2{
+    display: none !important;
+}
+
+.project-3{
+    display: none !important;
+}
+
 
 }
