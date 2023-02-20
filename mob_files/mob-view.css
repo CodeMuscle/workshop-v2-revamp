@@ -1,0 +1,238 @@
+button{
+    border:none !important;
+    background: transparent !important;
+    outline: none;
+}
+button:active{
+    border: none !important;
+    background: transparent !important;
+    outline: none;
+}
+button:checked{
+    border:none !important;
+    background: transparent !important;
+    outline: none;
+}
+button:focus{
+    border:none !important;
+    background: transparent !important;
+    outline: none;
+}
+
+.sticky-mob{
+    display: none !important;
+}
+
+.sticky-desktop{
+    display: fixed !important;
+}
+
+.rating-mob{
+    display: none !important;
+}
+
+.benefits-desktop{
+    display: block;
+}
+
+.benefits-mob{
+    display: none;
+}
+
+.sticky-header{
+    display: none;
+}
+
+.cert-desktop{
+    display: block !important;
+}
+
+.cert-mob{
+    display: none !important;
+}
+
+.cstm-program-section-desktop{
+    display: block;
+}
+.cstm-program-section-mob{
+    display: none;
+}
+
+.section1{
+    padding: 4em 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+
+.skills-section{
+    display: none;;
+}
+
+.people{
+        display: block;
+        transform: translate(0%, 0%) !important;
+}
+
+.rating-mob{
+    display: block !important;
+}
+
+.benefits-desktop{
+    display: none;
+}
+    
+.benefits-mob{
+    display: block;
+}
+
+.cstm-program-section-desktop{
+    display: none;
+}
+.cstm-program-section-mob{
+    display: block;
+}
+
+.workshop-testimonial{
+    display: none !important;
+}
+
+.workshop-desktop{
+    display: none !important;
+}
+
+.cert-desktop{
+    display: none !important;
+}
+
+.cert-mob{
+    display: block !important;
+}
+
+.course-det-mob{
+    display:none !important;
+}
+.course-cta{
+    display: none !important;
+}
+
+.review-wrapper{
+    display: block !important;
+}
+.sticky-header{
+    display: block;
+    padding: 0 16px;
+    box-shadow: 0 -8px 16px hsl(0deg 0% 62% / 6%);
+    height: 55px;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    z-index: 999;
+    transition: all 0.1s ease-in-out;
+    align-items: center;
+}
+
+.text-centered{
+    text-align: center;
+}
+
+.session-tag{
+    display: flex;
+    flex-direction: column;
+    height: 2rem;
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.sticky-title{
+    max-width: 1200px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: start;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    column-gap: 1rem;
+}
+
+.growth-sec .mentor-image-wrapper {
+    height: 20vh !important;
+    margin-right: 12px;
+  }
+
+.mentor-achievements{
+    display: none !important;
+}
+
+.register-now-mob{
+    display: none !important;
+}
+
+
+.cstm-program-span{
+    width: auto !important;
+}
+
+.cstm-program-li{
+    height: 30px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.sticky-mob{
+        display: block !important;
+        color: #fff;
+        padding: 10px 16px;
+        box-shadow: 0 -8px 16px hsl(0deg 0% 62% / 6%);
+        height: 66px;
+        position: fixed;
+        bottom: 0;
+        background: #000;
+        width: 100%;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        z-index: 999;
+        transition: all 0.1s ease-in-out;
+
+}
+
+.sticky-desktop{
+    display: none !important;
+}
+
+.enroll-now-btn{
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #000;
+    font-weight: 800;
+    font-size: 15px;
+    background-color: #FFD700;
+
+}
+
+.carousel-cell h4{
+    font-size: 1rem;
+}
+
+.cstm-program-section-mob .h1{
+    font-size: 2rem;
+}
+
+
+}
